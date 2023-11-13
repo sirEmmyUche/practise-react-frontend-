@@ -33,26 +33,30 @@ function PaginatedPage(){
   }, [currentPage]);
 
     return(
-        <div className="blog-container">
-            {
-                currentTableData.map(item=>{
-                   return (
-                   <div key={item.id} className="blog-card">
-                        <h3 className="title">{item.title}</h3>
-                        <p className="blog-body">{item.body}</p>
-                    </div>
-                    )
-                }) 
-                //: (<p>Loading.....</p>)
-            }
-            <Pagination
-        className="pagination-bar"
-        currentPage={currentPage}
-        totalCount={post.length}
-        pageSize={PageSize}
-        onPageChange={page => setCurrentPage(page)}
-      />
-        </div>
+        <>
+            <div className="blog-container">
+                {
+                    currentTableData.map(item=>{
+                    return (
+                    <div key={item.id} className="blog-card">
+                            <h3 className="title">{item.title}</h3>
+                            <p className="blog-body">{item.body}</p>
+                        </div>
+                        )
+                    }) 
+                    //: (<p>Loading.....</p>)
+                }
+                
+            </div>
+                <Pagination
+                className="pagination-bar"
+                currentPage={currentPage}
+                totalCount={post.length}
+                pageSize={PageSize}
+                onPageChange={page => setCurrentPage(page)}
+            />
+        </>
+        
     )
 }
 

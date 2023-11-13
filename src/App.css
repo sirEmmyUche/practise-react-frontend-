@@ -68,7 +68,8 @@ ul li:hover ul{
   /* border: 1px solid red; */
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* flex-wrap: wrap; */
 }
 
 .blog-card{
@@ -87,3 +88,36 @@ ul li:hover ul{
 .blog-body{
   font-size: 1rem;
 }
+/* 
+.pageContainerClass{
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+} 
+*/
+
+.pageItemClass{
+  border: 1px solid #0000ff;
+  margin:10px;
+  width:5rem;
+  padding: 0;
+  transition: border 3ms;
+}
+
+.pageItemClass:hover{
+  border: 1px solid red;
+}
+
+.pageActiveClass{
+  border: 1px solid transparent;
+  background-color: rebeccapurple;
+}
+
+.pageLinkClass{
+  border: 1px solid transparent;
+  width: 50%;
+  padding: 5px;
+  font-size: 1.5rem;
+  background-color: inherit;
+}
+
