@@ -15,6 +15,7 @@ function Home (){
                     <ul>
                         <li><Link to={'PaginatedPage'}>Pagination</Link></li>
                         <li><Link to={'PaginatedPage2'}>Pagination with npm package</Link></li>
+                        <li><Link to={'RevealOnScroll'}>Reveal On Scroll</Link></li>
                         <li><Link>Infinite Scroll</Link></li>
                     </ul>
                 </li>

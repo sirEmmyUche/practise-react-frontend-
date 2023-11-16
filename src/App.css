@@ -88,13 +88,13 @@ ul li:hover ul{
 .blog-body{
   font-size: 1rem;
 }
-/* 
-.pageContainerClass{
+
+/* .pageContainerClass{
   border: 1px solid red;
-  display: flex;
-  flex-direction: row;
-} 
-*/
+  width: 50%;
+  margin: auto;
+}  */
+
 
 .pageItemClass{
   border: 1px solid #0000ff;
@@ -121,3 +121,90 @@ ul li:hover ul{
   background-color: inherit;
 }
 
+
+/* stylling the reveal on scroll page */
+
+
+.Appp {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  font-family: "Edu NSW ACT Foundation", cursive;
+}
+
+/* body {
+  font-size: 50px;
+} */
+
+header,
+footer {
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.3);
+  height: 100vh;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  margin-top: 50px;
+  box-shadow: -3px -5px 5px rgba(0, 0, 0, 0.3);
+}
+
+main {
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.3), -3px -5px 5px rgba(0, 0, 0, 0.3);
+  /* border: 1px solid blue; */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  gap: 50px;
+  overflow: hidden;
+  transition: all ease-in 1s;
+}
+
+main div {
+  flex: 1;
+  height: 80%;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: all ease-in 1s;
+  
+}
+.child-one{
+  border: 1px solid blue;
+  animation: slide-in 1s ease-in-out;
+  transition: animation 3s;
+}
+
+.child-two{
+  border: 1px solid red;
+  animation: child-two-slide-in 1s ease-in-out;
+  transition: animation 3s;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes child-two-slide-in {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* .slide-in {
+  transform: translateX(0) !important;
+} */

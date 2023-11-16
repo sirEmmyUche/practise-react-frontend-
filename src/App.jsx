@@ -4,6 +4,7 @@ import { createBrowserRouter,createRoutesFromElements,
 import Home from './pages/home.jsx'
 import PaginatedPage from './pages/paginatedPage.jsx';
 import PaginatedPage2 from './pages/paginatedPage2.jsx';
+import RevealOnScroll from './pages/revealOnScroll.jsx';
 import './App.css'
 
 const router = createBrowserRouter([{path:"*", Component:Root}]);
@@ -14,6 +15,7 @@ function Root(){
       <Route path='/' element = {<Home/>}/>
       <Route path='/PaginatedPage' element = {<PaginatedPage/>}/>
       <Route path='/PaginatedPage2' element = {<PaginatedPage2/>}/>
+      <Route path='/RevealOnScroll' element = {<RevealOnScroll/>}/>
     </Routes>
   )
 }

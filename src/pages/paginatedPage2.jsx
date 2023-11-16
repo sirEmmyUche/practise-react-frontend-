@@ -54,6 +54,7 @@ function PaginatedPage2 (){
         setOffset={setOffset}
         currentPage={currentPage}
         setCurrentPage={setCurrentPage}
+        // pageContainerClass={"pageContainerClass"}
         pageItemClass={"pageItemClass"}
         pageActiveClass={"pageActiveClass"}
         pageLinkClass={"pageLinkClass"}
